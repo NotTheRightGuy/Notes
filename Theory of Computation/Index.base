@@ -1,0 +1,14 @@
+filters:
+  and:
+    - file.folder == "Theory of Computation"
+views:
+  - type: table
+    name: Study Order
+    order:
+      - study_order
+      - file.name
+      - difficulty
+      - pyq_frequency
+    sort:
+      - property: study_order
+        direction: ASC
